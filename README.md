@@ -8,5 +8,7 @@ During training, the encoder and decoder learn to form a bottleneck that capture
 
 There are various types of autoencoders, including vanilla autoencoders, convolutional autoencoders, recurrent autoencoders, denoising autoencoders, and variational autoencoders, to name a few. Each type of autoencoder is designed to handle specific types of input data and address certain tasks.
 
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/88442486/217734551-af7aaf03-3859-47a9-ba2c-e1184d05ec31.png">
+
 Dataset used: https://www.kaggle.com/datasets/arbazkhan971/cuhk-face-sketch-database-cufs <br>
 Reference: https://www.kaggle.com/code/theblackmamba31/photo-to-sketch-using-autoencoder
