@@ -215,3 +215,19 @@ for i in ls:
     show_images(test_image[i],test_sketch_image[i],predicted)
 
 
+image = cv2.imread('job.jpeg')
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+SIZE = 256
+image = cv2.resize(image, (SIZE, SIZE))
+image = image.astype('float32') / 255.0
+plt.imshow(image)
+img_array = []
+img_array.append(img_to_array(image))
+print(img_array)
+print("Total number of images:",len(img_array))
+SIZE = 256
+train_img = np.reshape(image, (len(img_array),SIZE,SIZE,3))
+print(train_img)
+SIZE = 256
+predicted =np.clip(model.predict(train_img[0].reshape(1,SIZE,SIZE,3)),0.0,1.0).reshape(SIZE,SIZE,3)
+plt.imshow(predicted)
